@@ -11,7 +11,6 @@ export const FormStep1 = () => {
   const handleNextStep = (e: any) => {
     if (state.name !== "") {
       e.preventDefault();
-      console.log("cheguei aqui");
       navigate("/step2");
     } else {
       alert("Preencha os dados.");
