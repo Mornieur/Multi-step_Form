@@ -1,47 +1,73 @@
-# Getting Started with Create React App
+Multi-step Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repository containing a multi-step form made with HTML, CSS, and JavaScript. The form is divided into multiple steps, and the user must fill out all the required fields on each step before moving to the next one.
+How to Use
 
-## Available Scripts
+To use the multi-step form in your project, follow the steps below:
 
-In the project directory, you can run:
+    Download the files from the repository or clone it using the following command:
 
-### `npm start`
+bash
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+git clone https://github.com/Mornieur/Multi-step_Form.git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    Copy the files index.html, styles.css, and script.js to your project.
 
-### `npm test`
+    Update the form fields, including the input types, names, and placeholders, in the HTML file according to your needs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Configure the form validation in the JavaScript file by updating the rules and error messages as necessary.
 
-### `npm run build`
+javascript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+const formValidation = () => {
+  // Define your validation rules here
+};
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const validationErrorMessages = {
+  // Define your error messages here
+};
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Customize the styles in the CSS file to match your project's design.
 
-### `npm run eject`
+css
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+/* Add your custom styles here */
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Example
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Check out an example of a multi-step form in HTML:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+html
 
-## Learn More
+<form id="multi-step-form" class="form-container" novalidate>
+  <div class="form-step">
+    <h2>Step 1</h2>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="form-step">
+    <h2>Step 2</h2>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+  </div>
+  <div class="form-step">
+    <h2>Step 3</h2>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <input type="text" name="address" placeholder="Your Address" required>
+  </div>
+  <div class="form-step">
+    <h2>Step 4</h2>
+    <input type="text" name="city" placeholder="Your City" required>
+    <input type="text" name="state" placeholder="Your State" required>
+    <input type="text" name="zip" placeholder="Your Zip Code" required>
+  </div>
+  <div class="form-buttons">
+    <button type="button" id="prev-button" onclick="prevStep()">Previous</button>
+    <button type="button" id="next-button" onclick="nextStep()">Next</button>
+    <button type="submit" id="submit-button">Submit</button>
+  </div>
+</form>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# Multi-step_Form
+This repository was created by Mornieur.
