@@ -12,7 +12,7 @@ This multi-step form project was developed using React, Styled-components, and T
 - Select preferred contact options (email, phone, social media).
 - Input for the developer's GitHub profile.
 
-## Technologies Used
+## Technologies
 
 - React: A JavaScript library for building user interfaces.
 - Styled-components: A library for styling React components using CSS-in-JS syntax.
