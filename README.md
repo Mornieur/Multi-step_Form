@@ -1,73 +1,48 @@
-Multi-step Form
+# Multi-step Form for Developer Registration
 
-This is a repository containing a multi-step form made with HTML, CSS, and JavaScript. The form is divided into multiple steps, and the user must fill out all the required fields on each step before moving to the next one.
-How to Use
+## Overview
 
-To use the multi-step form in your project, follow the steps below:
+This multi-step form project was developed using React, Styled-components, and TypeScript. The form's purpose is to collect detailed information from developers interested in registering on a platform. The form is divided into multiple steps, making the filling process more user-friendly and organized.
 
-    Download the files from the repository or clone it using the following command:
+## Features
 
-bash
+- Multi-step form with multiple stages.
+- Input for developer's name.
+- Selection of developer's professional level (beginner, intermediate, advanced).
+- Select preferred contact options (email, phone, social media).
+- Input for the developer's GitHub profile.
 
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- Styled-components: A library for styling React components using CSS-in-JS syntax.
+- TypeScript: A programming language that adds static typing to JavaScript.
+
+## Installation
+
+1. Clone this repository to your local environment:
+```
 git clone https://github.com/Mornieur/Multi-step_Form.git
+```
+2. Navigate to the project directory:
+```
+cd Multi-step_Form
+```
+3. Install the dependencies:
+```
+npm install
+```
+4. Start the development server:
+```
+npm start
+```
 
-    Copy the files index.html, styles.css, and script.js to your project.
+5. Open the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-    Update the form fields, including the input types, names, and placeholders, in the HTML file according to your needs.
+## How to Use the Form
 
-    Configure the form validation in the JavaScript file by updating the rules and error messages as necessary.
-
-javascript
-
-const formValidation = () => {
-  // Define your validation rules here
-};
-
-const validationErrorMessages = {
-  // Define your error messages here
-};
-
-    Customize the styles in the CSS file to match your project's design.
-
-css
-
-/* Add your custom styles here */
-
-Example
-
-Check out an example of a multi-step form in HTML:
-
-html
-
-<form id="multi-step-form" class="form-container" novalidate>
-  <div class="form-step">
-    <h2>Step 1</h2>
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-  </div>
-  <div class="form-step">
-    <h2>Step 2</h2>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-  </div>
-  <div class="form-step">
-    <h2>Step 3</h2>
-    <input type="tel" name="phone" placeholder="Your Phone Number" required>
-    <input type="text" name="address" placeholder="Your Address" required>
-  </div>
-  <div class="form-step">
-    <h2>Step 4</h2>
-    <input type="text" name="city" placeholder="Your City" required>
-    <input type="text" name="state" placeholder="Your State" required>
-    <input type="text" name="zip" placeholder="Your Zip Code" required>
-  </div>
-  <div class="form-buttons">
-    <button type="button" id="prev-button" onclick="prevStep()">Previous</button>
-    <button type="button" id="next-button" onclick="nextStep()">Next</button>
-    <button type="submit" id="submit-button">Submit</button>
-  </div>
-</form>
-
-Credits
-
-This repository was created by Mornieur.
+1. Enter your name in the first step.
+2. Select your professional level (beginner, intermediate, advanced) in the second step.
+3. Choose your preferred contact options (email, phone, social media) in the third step.
+4. Provide your GitHub profile in the fourth and final step.
+5. Click the "Submit" button to submit the form.
