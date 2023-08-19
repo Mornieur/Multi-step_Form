@@ -1,8 +1,22 @@
-# Multi-step Form for Developer Registration
+<div align='center'>
+  <h1>👤 Welcome to Multi Step Form Project!</h1>
+</div>
+
+<br />
+
+<div align='center'>
+
+  <img src="./public/multi-step-form.png" alt='project image' width='600'  />
+</div>
+
+<br />
 
 ## Overview
 
-This multi-step form project was developed using React, Styled-components, and TypeScript. The form's purpose is to collect detailed information from developers interested in registering on a platform. The form is divided into multiple steps, making the filling process more user-friendly and organized.
+<div align='center'>
+  <strong>This multi-step form project was developed using React, Styled-components, and TypeScript. The form's purpose is to collect detailed information from developers interested in registering on a platform. The form is divided into multiple steps, making the filling process more user-friendly and organized.
+</strong>
+</div>
 
 ## Features
 
@@ -21,18 +35,25 @@ This multi-step form project was developed using React, Styled-components, and T
 ## Installation
 
 1. Clone this repository to your local environment:
+
 ```
 git clone https://github.com/Mornieur/Multi-step_Form.git
 ```
+
 2. Navigate to the project directory:
+
 ```
 cd Multi-step_Form
 ```
+
 3. Install the dependencies:
+
 ```
 npm install
 ```
+
 4. Start the development server:
+
 ```
 npm start
 ```
