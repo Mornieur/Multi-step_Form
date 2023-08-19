@@ -1,11 +1,11 @@
 import * as C from "./styles";
 
 type Props = {
-  title: string;
-  description: string;
-  icon: string;
   selected: boolean;
-  onClick: () => void;
+  title?: string;
+  description?: string;
+  icon?: string;
+  onClick?: () => void;
 };
 
 export const SelectOption = ({
